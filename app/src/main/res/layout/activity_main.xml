@@ -8,40 +8,55 @@
 
     <TextView
         android:id="@+id/game_block"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:background="@color/colorRed"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@color/colorBlue"
         android:gravity="center"
         android:text="@string/app_name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="12pt"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18pt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
         />
 
     <Button
-        android:id="@+id/button_start"
-        android:layout_width="150dp"
+        android:id="@+id/button_easy"
+        android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="@string/button_start"
+        android:text="@string/button_easy"
         android:layout_below="@+id/game_block"
         android:background="@color/colorGreen"
         android:gravity="center"
+        android:textSize="14pt"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="125dp"
-        android:onClick="beginGame"
+        android:layout_marginLeft="100dp"
+        android:onClick="startEasy"
         />
 
     <Button
-        android:id="@+id/button_score"
-        android:layout_width="150dp"
+        android:id="@+id/button_medium"
+        android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="@string/button_score"
-        android:layout_below="@+id/button_start"
-        android:background="@color/colorPurple"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="125dp"
-        android:onClick="viewScore"
+        android:text="@string/button_medium"
+        android:layout_below="@+id/button_easy"
+        android:background="@color/colorYellow"
+        android:textSize="14pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:onClick="startMedium"
+        />
+
+    <Button
+        android:id="@+id/button_hard"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/button_hard"
+        android:layout_below="@+id/button_medium"
+        android:background="@color/colorRed"
+        android:textSize="14pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:onClick="startHard"
         />
 
 </RelativeLayout>

@@ -16,9 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".GamePlay"
-            android:label="@string/title_activity_game_play"
+
+        <activity android:name=".Easy"
+            android:label="EasyDifficulty"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Medium"
+            android:label="MediumDifficulty"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Hard"
+            android:label="HardDifficulty"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+
+        <activity android:name=".Win"
+            android:label="WinScreen"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
